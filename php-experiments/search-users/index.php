@@ -81,22 +81,22 @@
 		<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
 			<div class="form-group">
 				<label for="hostInput">Host</label>
-				<input type="text" id="hostInput" class="form-control" placeholder="Enter Host" name="host">
+				<input type="text" id="hostInput" class="form-control" placeholder="Enter Host" name="host" value="<?php echo $host; ?>">
 			</div>
 
 			<div class="form-group">
 				<label for="userInput">User</label>
-				<input type="text" id="userInput" class="form-control" placeholder="Enter User" name="user">
+				<input type="text" id="userInput" class="form-control" placeholder="Enter User" name="user" value="<?php echo $user; ?>">
 			</div>
 			
 			<div class="form-group">
 				<label for="passwordInput">Password</label>
-				<input type="password" id="passwordInput" class="form-control" placeholder="Enter Password" name="password">
+				<input type="password" id="passwordInput" class="form-control" placeholder="Enter Password" name="password"  value="<?php echo $password; ?>">
 			</div>
 
 			<div class="form-group">
 				<label for="databaseInput">Database</label>
-				<input type="text" id="databaseInput" class="form-control" placeholder="Enter Database" name="database">
+				<input type="text" id="databaseInput" class="form-control" placeholder="Enter Database" name="database" value="<?php echo $database; ?>">
 			</div>
 			<button type="submit" name="submit" class="btn btn-primary">Submit</button>
 		</form>
