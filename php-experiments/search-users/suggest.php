@@ -12,14 +12,11 @@
 	if (mysqli_connect_errno())
 	{
 		// Connection Failed.
-		$msg = 'Failed to connect to MySQL '. mysqli_connect_errno();
-		$msgClass = 'alert-danger';
+		echo 'Failed to connect to MySQL '. mysqli_connect_errno();
 	}
 	else
 	{
 		// No Errors.
-		$msg = 'You have successfully connected to MySQL';
-		$msgClass = 'alert-success';
 
 		// Create Query.
 		$query = 'SELECT * FROM users';
