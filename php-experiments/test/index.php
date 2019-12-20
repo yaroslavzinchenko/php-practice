@@ -1,3 +1,3 @@
 <?php
-	echo 2;
+	echo intval(3.999);
 ?>
